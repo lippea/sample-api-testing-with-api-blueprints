@@ -1,0 +1,2 @@
+# "\r" is not liked in API blue print files
+*.apib text eol=lf
