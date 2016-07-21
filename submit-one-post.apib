@@ -1,0 +1,34 @@
+FORMAT: 1A
+
+# Fake Online REST API
+
+## Group Posts
+
+### Posts [/posts]
+
+#### Submit one post [POST]
+
++ Relation: posts-submitpost
+
++ Request (application/json)
+
+    + Body
+
+            {
+                "title": "foo",
+                "body": "bar",
+                "userId": 1
+            }
+
++ Response 201 (application/json; charset=utf-8)
+
+    OK
+
+    + Body
+    
+            {
+              "title": "foo",
+              "body": "bar",
+              "userId": 1,
+              "id": 101
+            }

@@ -1,0 +1,21 @@
+FORMAT: 1A
+
+# Fake Online REST API
+
+## Group Posts
+
+### /posts/000000
+
+#### Retrieve one post [GET]
+
++ Relation: posts-getposts
+
++ Response 200 (application/json; charset=utf-8)
+
+    OK
+
+    + Attributes
+        - userId: 1 (number, fixed)
+        - id: 000000 (number, fixed)
+        - title: `foo` (fixed)
+        - body: `bar` (fixed)
